@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora INSS e IRRF 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <div class="theme-toggle">
+            <button id="themeToggle">🌓</button>
+        </div>
+        <h1>Calculadora INSS e IRRF 2024</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="salarioBruto">Salário Bruto:</label>
+                <input type="number" id="salarioBruto" placeholder="Digite o salário bruto">
+            </div>
+            <div class="input-group">
+                <label for="dependentes">Número de Dependentes:</label>
+                <input type="number" id="dependentes" placeholder="Quantidade de dependentes" min="0">
+            </div>
+            <div class="input-group">
+                <label for="pensao">Pensão Alimentícia:</label>
+                <input type="number" id="pensao" placeholder="Valor da pensão (se houver)">
+            </div>
+            <button onclick="calcular()" class="calc-button">Calcular</button>
+            
+            <div class="results">
+                <div class="result-item">
+                    <h3>Desconto INSS</h3>
+                    <p id="inssResult">R$ 0,00</p>
+                </div>
+                <div class="result-item">
+                    <h3>Base de Cálculo IRRF</h3>
+                    <p id="baseIrrf">R$ 0,00</p>
+                </div>
+                <div class="result-item">
+                    <h3>Desconto IRRF</h3>
+                    <p id="irrfResult">R$ 0,00</p>
+                </div>
+                <div class="result-item">
+                    <h3>Salário Líquido</h3>
+                    <p id="salarioLiquido">R$ 0,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
